@@ -1,0 +1,59 @@
+<div class="col-md-3 col-md-push-0">
+					<div id="side">
+						<div class="panel panel-default panel-contest-timer">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center"><div class="badge">MENUS</div></h3>
+							</div>
+							<div class="panel-body">
+								<div class="text-center">
+									<div class="badge">
+									<?php
+										if(isset($_SESSION["onlinelabsystemusertype"]))
+										{
+											if($_SESSION["onlinelabsystemusertype"]=="admin"){
+												$query = "SELECT *FROM ADMINACTIONS";
+												$RES =  mysql_query($query,$connection);
+												while($row=mysql_fetch_array($RES))
+												{
+													$ret = left_side_panel($row[1],$row[2]);
+													echo "{$ret}";
+												}
+											}
+											else
+											{
+												$query = "SELECT *FROM USERMENUS";
+												$RES =  mysql_query($query,$connection);
+												while($row=mysql_fetch_array($RES))
+												{
+													$ret = left_side_panel($row[1],$row[2]);
+													echo "{$ret}";
+												}
+											}
+										}
+										else
+										{
+											echo "<b style='color: black;'></strong>TO <br>SHOW PROBLEMS <br>OR<br>
+											MANAGE THE ADMIN PANEL,<br><br> </b><b style='color:red;'>PLEASE LOGIN FIRST.</b>";
+										}
+										
+										
+									?>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+							<h3 class="panel-title text-center"><div class="badge">DISCLAIMER</div></h3>
+							</div>
+							<div class="panel-body">
+								<p>
+								<?php
+									include("/includes/disclaimer.html");
+								?>
+								</p>
+							</div>
+						</div>
+					</div> 
+				</div>
