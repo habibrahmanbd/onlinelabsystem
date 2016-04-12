@@ -8,39 +8,29 @@
 			<?php
 				include("includes/leftsidepanel.html");
 			?>
-				
+
 				<!--the right side of the web pages ends here.. -->
 		
 			<div class="col-md-9 col-md-pull-0">
-					<div id="main">
-		
-			<p>	<br>	<br>
-				<h4>
-				<img src="images/main-im-2.JPG" alt="Online Lab Students" style="float:right;width:400px;height:300px">
-				<article>
-					<!-- <pre style="color:#000000;"> -->
+				<marquee style:\"color:red;\"> <h4 >
 					<?php
-						include("/includes/description.html");
+						$query = "SELECT *FROM BREAKINGS order by ID DESC";
+						$RES =  mysql_query($query,$connection);
+		
+						while($row=mysql_fetch_array($RES))
+							echo "<b style=\"color:red;\">{$row[1]}. </b>";
 					?>
-					<!-- </pre> -->
-				</article>
-				</h4>
-			</p>
-			<h3><u><b style='font:airal;'>Key Features:</b></u></h3>
-			<ul>
-				<h4>
-				<b>
-					<pre><li> Online Based Lab</li></pre>
-					<pre><li> Realise from Workload of checking  each students code manually</li></pre>
-					<pre><li> Checking all the possible input/output</li></pre>
-					<pre><li> Easily marking the students</li></pre>
-				</b>
-				</h4>
-			</ul>
-			<b>
-				<blockquote cite="Online Lab System <sup>&trade;</sup">Online Lab System<sup>&trade;</sup> is to much needed to digitalize our country. It's too much grateful news to see something like this. - "Habibur Rahman"</blockquote>
-			</b>
-			</div></div>
+				<h4></marquee>
+				<div id="main">
+					<?php
+						$query = "SELECT *FROM blog order by postNo DESC";
+						$RES =  mysql_query($query,$connection);
+		
+						while($row=mysql_fetch_array($RES))
+						echo "<table> <td><tr><h1><b><a href =\"\">{$row[3]}</a></b></h1>by, <b><i style=\"color:blue;\">{$row[0]}</i></b><h3>{$row[2]}</tr></td></table>";
+					?>
+				</div>
+			</div>
 		</div>
 	</div>
 	

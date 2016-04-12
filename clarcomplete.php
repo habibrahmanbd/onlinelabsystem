@@ -15,7 +15,7 @@
 					if(isset($proid)&isset($clarid)&isset($clar))
 					{
 							// echo "{$proid} {$clarid} {$clar} <br>";
-							$res = mysqli_query($connect_i,"INSERT into CLARIFICATOINS values('{$proid}','{$clarid}','{$clar}')");
+							$res = mysqli_query($connect_i,"INSERT INTO `clarifications`(`proid`, `clarid`, `clar`) VALUES ('{$proid}','{$clarid}','{$clar}')");
 							if(isset($res))
 							{
 								echo "<h3 style =\"text-align:center; color:red;\" >New clarification inserted Successfully!!! <br></h3>";

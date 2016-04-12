@@ -1,5 +1,5 @@
 <?php	require_once("/includes/functions.php");?>
-<?php include("/includes/session.php"); ?>
+<?php 	include("/includes/session.php"); ?>
 <?php	include("/includes/header-in.php");?>
 
 <?php	$error = $_GET['error'];?>

@@ -22,9 +22,9 @@
 							?>
 				
 				<!--the right side of the web pages ends here.. -->
-			<div class="row-fluid">
-					<div class="col-md-4 col-sm-offset-4">
-						<div style="margin-top: 96px;" class="panel panel-default panel-login">
+			<div class="col-md-4">
+					<div class="col-md-10 col-sm-offset-10">
+						<div style="margin-top: 0px;" class="panel panel-default panel-login">
 							<div class="panel-heading"><h3 class="panel-title"><div class="badge">Add new students</div></h3></div>
 							<div class="panel-body">
 								<form method="post" action="registrationcomplete.php" class="form-login">
