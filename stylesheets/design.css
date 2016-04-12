@@ -121,7 +121,7 @@ table {
 	vertical-align:top;
 	font-size:18px;
 	line-height:20px;
-    border-spacing: 0}
+    border-spacing: 10px}
 td,th {
 	border-collapse: collapse;
 	vertical-align:top;
@@ -610,10 +610,10 @@ input,button,select,textarea {
     font-size: inherit;
     line-height: inherit}
 a {
-    color: #658733;
+    color: #600733;
     text-decoration: none}
 a:hover,a:focus {
-    color: #658733;
+    color: #668700;
     text-decoration: underline}
 a:focus {
     outline: thin dotted;
