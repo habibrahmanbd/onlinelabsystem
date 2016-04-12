@@ -56,7 +56,11 @@ template <class T> inline T modinverse(T a,T M)
 
 int main()
 {
-//    ios_base::sync_with_stdio(false);cin.tie(0);
-    pf("Hello Habib\n");
+    ll t=ILL;
+    for(ll cs=1; cs<=t; cs++)
+    {
+        ll a=ILL, b=ILL;
+        pf("Case %lld: %lld\n",cs, a+b);
+    }
     return 0;
 }

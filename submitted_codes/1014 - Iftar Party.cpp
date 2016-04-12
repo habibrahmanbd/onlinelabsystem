@@ -56,58 +56,43 @@ template <class T> inline T modinverse(T a,T M)
 
 int main()
 {
-    ll t=ILL;
-    for(ll cs=1; cs<=t; cs++)
+    int t=II;
+    for(int cs=1; cs<=t; cs++)
     {
-        ll n=ILL;
-        ll arr[2*n][n+1];
-        ll dp[2*n][n+1];
-        memset(dp,0,sizeof dp);
-        for(ll i=0; i<n; i++)
+        ll p=ILL, l=ILL;
+        p-=l;
+        ll temp = (ll)ceil(sqrt(p));
+        vector<ll>res;
+        for(ll i=1; i<temp; i++)
         {
-            for(ll j=0; j<=i; j++)
+            if(p%i==0)
             {
-                arr[i][j]=ILL;
-//                cout<<"here";
+                ll q=(p/i);
+                if(l<q)
+                    res.pb(q);
+                if(l<i)
+                    res.pb(i);
             }
         }
-        for(ll i=n; i<=2*n-2; i++)
+        if(temp*temp==p)
         {
-            for(ll j=0; j<(2*n)-(i+1); j++)
-            {
-//                cout<<"I: "<<i<<" J: "<<j<<endl;
-                arr[i][j]=ILL;
-//                cout<<"here2";
-            }
+            ll q= temp;
+            if(l<q)
+                res.pb(q);
         }
-        dp[0][0]=arr[0][0];
-//        cout<<dp[0][0];
-        for(ll i=1; i<n; i++)
+        sort(all(res));
+        if(res.size())
         {
-            for(ll j=0; j<=i; j++)
-            {
-                if(j==0)
-                    dp[i][j]+=dp[i-1][j]+arr[i][j];
-                else if(j==i)
-                {
-                    dp[i][j]+=dp[i-1][j-1]+arr[i][j];
-                }
-                else
-                {
-                    dp[i][j]=arr[i][j]+max(dp[i-1][j],dp[i-1][j-1]);
-                }
-//                cout<<"I: "<<i<<" J: "<<j<<" Res : "<<dp[i][j]<<endl;
-            }
+            pf("Case %d: %lld",cs,res[0]);
+//            pf("here");
+            for(ll i=1; i<res.size(); i++)
+                pf(" %lld",res[i]);
+            pf("\n");
         }
-        for(ll i=n; i<=2*n-2; i++)
+        else
         {
-            for(ll j=0; j<(2*n)-(i+1); j++)
-            {
-                dp[i][j]+=arr[i][j]+max(dp[i-1][j],dp[i-1][j+1]);
-//                cout<<dp[i][j]<<endl;
-            }
+            pf("Case %d: impossible\n",cs);
         }
-        pf("Case %lld: %lld\n",cs,dp[2*n-2][0]);
     }
     return 0;
 }
