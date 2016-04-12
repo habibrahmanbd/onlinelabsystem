@@ -388,6 +388,54 @@
 									</div> ";
 		return $ret;
 	}
+	//Blog post fields
+		function blog_fields($title, $des)
+	{
+		$btntxt="POST";
+			
+		$ret = "					
+									<div class=\"form-group\">
+										<label for=\"inputTitle\" class=\"control-label\">Title:</label>
+										<input id=\"inputTitle\" type=\"text\" name=\"title\" value = \"{$title}\" required class=\"form-control\">
+									</div>
+									
+									<div class=\"form-group\">
+										<label for=\"inputProDes\" class=\"control-label\">Blog Status:</label>
+										<textarea id=\"inputProDes\" type=\"text\" name=\"blogdes\" rows=\"10\" cols=\"300\" required class=\"form-control\">{$des}</textarea>
+									</div>
+									
+									
+									<br>
+									<div class=\"form-group\">
+										<button type=\"submit\" data-loading-text=\"Updating..\" class=\"btn btn-primary\">{$btntxt}</button>
+						
+									</div> ";
+		return $ret;
+	}
+	//Headline post fields
+		function head_fields($id, $head)
+	{
+		$btntxt="POST";
+			
+		$ret = "					
+									<div class=\"form-group\">
+										<label for=\"inputTitle\" class=\"control-label\">ID:</label>
+										<input id=\"inputTitle\" type=\"text\" name=\"id\" value = \"{$id}\" required class=\"form-control\">
+									</div>
+									
+									<div class=\"form-group\">
+										<label for=\"inputProDes\" class=\"control-label\">Breaking Headline:</label>
+										<textarea id=\"inputProDes\" type=\"text\" name=\"head\" rows=\"10\" cols=\"300\" required class=\"form-control\">{$head}</textarea>
+									</div>
+									
+									
+									<br>
+									<div class=\"form-group\">
+										<button type=\"submit\" data-loading-text=\"Updating..\" class=\"btn btn-primary\">{$btntxt}</button>
+						
+									</div> ";
+		return $ret;
+	}
 	
 	
 ?>
