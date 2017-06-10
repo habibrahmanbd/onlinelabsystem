@@ -1,0 +1,8 @@
+title: Online Lab System
+description: Online Judge
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions

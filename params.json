@@ -1,7 +1,0 @@
-{
-  "name": "Online Lab System",
-  "tagline": "Online Judge",
-  "body": "#Online Lab System\r\n````\r\nThis is actually an online lab project completed under \r\nProf. Dr. Nazrul Islam Mandol, Head CSE, RUET, Rajshahi, Bangladesh \r\nfor my project work.An website for online judge for programming contest and problem solving.\r\n````\r\n#Languages\r\n`````\r\nFor this website I actually used HTML, CSS ( Copied from an favourite online (http://algo.codemarshall.com) )  \r\n`````\r\n#Todo\r\n* Auto Compiler\r\n* Editor\r\n* Rank List\r\n\r\n#Screenshots\r\n* 1\r\n* 2\r\n* 3\r\n* 4\r\n\r\n#Credits\r\n* For CSS, credits goes to Codemarshall\r\n",
-  "google": "",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
