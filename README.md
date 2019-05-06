@@ -2,7 +2,12 @@
 An online Judding System to Host programming contests online. This platform has code compilation, highlist, submit features on user side. On admin site, problem creatation, update, input file, output file, run time etc. features are available.
 
 ## Languages
-For this website I actually used HTML, CSS ( Copied from an favourite online (http://algo.codemarshall.com) )  
+ - HTML5
+ - CSS
+ - PHP
+ 
+## Server
+ - Apache with MySQL 5.0
 
 ## Todo
 * Auto Compiler
