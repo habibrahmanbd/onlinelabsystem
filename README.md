@@ -1,5 +1,5 @@
 ## Online Lab System:
-An online Judding System to Host programming contests online. This platform has code compilation, highlist, submit features on user side. On admin site, problem creatation, update, input file, output file, run time etc. features are available.
+An online Judding System to Host programming contests online. This platform has code compilation, highlight, submitting features on user side. On admin site, problem creatation, update, input file, output file, run time etc. features are available.
 
 ## Languages
  - HTML5
