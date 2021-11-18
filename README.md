@@ -4,7 +4,7 @@ This is actually an online lab project completed under Prof. Dr. Nazrul Islam Ma
 for my project work.An website for online judge for programming contest and problem solving.
 
 ## Languages
-For this website I actually adopted HTML, CSS from [CodeMarshal](https://algo.codemarshal.org/).a
+For this website I actually adopted HTML, CSS from [CodeMarshal](https://algo.codemarshal.org/).
 
 ## ToDo
 * Auto Compiler
